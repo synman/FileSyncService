@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+       <ScrollView android:layout_width="fill_parent" android:id="@+id/scrollView1" android:layout_height="fill_parent">
+		<RelativeLayout android:id="@+id/relativeLayout2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+       		<TextView android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="FTP Server Name" android:layout_centerHorizontal="true" android:layout_alignParentTop="true"></TextView>
+       		<EditText android:layout_height="wrap_content" android:id="@+id/serverName" android:layout_centerHorizontal="true" android:layout_width="280dp" android:layout_below="@+id/textView2" android:layout_marginBottom="10px"/>
+	        <EditText android:inputType="textEmailAddress" android:layout_height="wrap_content" android:id="@+id/userName" android:layout_width="280dp" android:layout_centerHorizontal="true" android:layout_below="@+id/textView3"></EditText>
+	        <EditText android:inputType="textPassword" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:id="@+id/password" android:layout_width="280dp" android:layout_below="@+id/textView4"></EditText>
+	        <TextView android:layout_width="wrap_content" android:id="@+id/textView3" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Username" android:layout_centerHorizontal="true" android:layout_below="@+id/serverName"></TextView>
+	        <TextView android:layout_width="wrap_content" android:id="@+id/textView4" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Password" android:layout_centerHorizontal="true" android:layout_below="@+id/userName"></TextView>
+	        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Service Status" android:layout_centerHorizontal="true" android:layout_below="@+id/password" android:layout_marginTop="100dp"></TextView>
+	        <ToggleButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="ToggleButton" android:id="@+id/serviceToggle" android:layout_centerHorizontal="true" android:layout_below="@+id/textView1" android:layout_marginBottom="20dp"></ToggleButton>
+	    </RelativeLayout>
+       </ScrollView>
+
+</LinearLayout>
